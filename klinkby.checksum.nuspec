@@ -2,17 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>Klinkby.Checksum</id>
-    <version>1.0.1.0</version>
+    <version>1.0.2.0</version>
     <title>Klinkby.Checksum</title>
     <authors>Mads Breusch Klinkby</authors>
-    <description>Fast CRC32 implementation for .NET. ** NOT FOR SECURITY USE **</description>
+    <description>Fast Portable CRC32 implementation for .NET. ** NOT FOR SECURITY USE **</description>
     <copyright>MIT license</copyright>
+    <projectUrl>https://github.com/klinkby/klinkby.checksum</projectUrl>
     <licenseUrl>https://raw.githubusercontent.com/klinkby/klinkby.checksum/master/license.txt</licenseUrl>
     <tags>klinkby checksum crc32</tags>
   </metadata>
   <files>
-    <file src="bin\release\klinkby.Checksum.dll" target="lib\net452\klinkby.checksum.dll"/>
-    <file src="bin\release\klinkby.checksum.pdb" target="lib\net452\klinkby.checksum.pdb"/>
-    <file src="bin\release\klinkby.checksum.xml" target="lib\net452\klinkby.checksum.xml"/>
+    <!-- Profile328 .NET Portable Subset (.NET Framework 4, Silverlight 5, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8) -->
+
+    <file src="bin\release\klinkby.Checksum.dll" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\klinkby.checksum.dll"/>
+    <file src="bin\release\klinkby.checksum.pdb" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\klinkby.checksum.pdb"/>
+    <file src="bin\release\klinkby.checksum.xml" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\klinkby.checksum.xml"/>
   </files>
 </package>
